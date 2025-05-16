@@ -1,0 +1,148 @@
+*{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    position: relative;
+    display: inline-block;
+}
+.logo img{
+    display: block;
+    width: 83px;
+    height: auto;
+}
+.logo h2{
+    font-family: poppins;
+    position: absolute;
+    top: 35%;
+    left: 88%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 4%;
+    line-height: 100%;
+}
+.navbar{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 120px;
+    justify-content: space-between;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+/* .profile-trigger {
+  display: flex;
+  align-items: center; 
+  gap: 8px;
+}
+.username{
+    margin: 0;
+    color: #5B5B5B;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2%;
+    line-height: 100%;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+} */
+
+.navbar .nav-items .nav-list{
+    display: flex;
+}
+.navbar .nav-items .nav-list li a{
+    margin: 0;
+    text-decoration: none;
+    color: #5B5B5B;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2%;
+    line-height: 100%;
+}
+
+.navbar .nav-items .nav-list li{
+    margin: 0;
+    padding: 0;
+    margin-top: 55px;
+    margin-right: 40px;
+}
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.profile-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 100%;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.username {
+    color: #5B5B5B;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2%;
+    line-height: 100%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 999;
+}
+
+.dropdown-menu li a {
+  display: block;
+  font-family: poppins;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Show dropdown on hover */
+.profile-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
