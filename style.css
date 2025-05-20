@@ -108,7 +108,7 @@ a{
 .info_section{
     width: 100%;
     padding: 32px 0;
-    background-color: #9DCCFF;
+    background-color: rgba(157, 204, 255, .2);
     align-items: center;
 }
 .section{
@@ -274,11 +274,11 @@ a{
 .reading_blog {
     width: 100%;
     padding: 30px 0;      
-    background-color: #9DCCFF; 
+    background-color: rgba(157, 204, 255, .2); 
 }
 
 .reading_blog .custom_container {
-    max-width: 1200px; 
+    max-width: 1650px; 
     margin: 0 auto; 
 }
 
@@ -438,10 +438,15 @@ a{
 
 
 .marketing-section {
-    padding: 40px;
+    padding: 40px 0;
     /* max-width: 1200px; */
-    margin: 80px auto; 
-    background-color: #D9D9D9; 
+    width: 100%;
+    /* margin: 80px auto;  */
+    background-color: rgba(217, 217, 217, 1); 
+}
+.marketing-section .custom_container{
+    max-width: 1650px;
+    margin: 0 auto;
 }
 
 .marketing-section .header {
