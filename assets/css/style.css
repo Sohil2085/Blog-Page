@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 body{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
     font-size: 16px;
     color: #000;
     font-family: "Poppins", sans-serif;
@@ -227,8 +230,8 @@ figure, .figure, .picture{
 /* problem */
 .section_bloglist .custom_container ul li h3{
     position: absolute;
-    bottom: 34px;
-    left: 60px;
+    bottom: 13%;
+    left: 20%;
     background: rgba(255, 255, 255, 0.7);
     width: calc(100% - 120px);
     padding: 16px 40px;
@@ -360,6 +363,7 @@ figure, .figure, .picture{
     padding: 40px 0;
     /* max-width: 1200px; */
     width: 100%;
+    margin-bottom: 171px;
     /* margin: 80px auto;  */
 }
 .marketing-section .custom_container{
@@ -398,7 +402,7 @@ figure, .figure, .picture{
 
 .marketing-section .custom_container .card-container {
     display: flex;
-    gap: 20px;
+    gap: 50px;
     padding: 20px 20px;
     margin: 0;
 }
@@ -504,17 +508,27 @@ figure, .figure, .picture{
     line-height: 1.5;
 }
 
-.marketing-section .author {
+.marketing-section .custom_container .card-container .card .author {
     display: flex;
     align-items: center;
     margin: 10px 0;
+    justify-content: space-between;
+}
+.marketing-section .custom_container .card-container .card .author .footer_img{
+    display: flex;
+    gap: 17.78px;
+}
+.marketing-section .custom_container .card-container .card .author .footer_img .footer_img_name{
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2%;
 }
 
 .marketing-section .author img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    margin-right: 8px;
 }
 
 .marketing-section .author span {
@@ -525,15 +539,25 @@ figure, .figure, .picture{
 
 .marketing-section .footer {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
 }
 
-.marketing-section .footer .price {
+.marketing-section .custom_container .card-container .card .author .footer .price {
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: #00b6aa;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(73, 187, 189, 1);
+    letter-spacing: 2%;
+}
+.marketing-section .custom_container .card-container .card .author .footer .discount{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
+    letter-spacing: 2%;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    padding-right: 14px;
+    padding-top: 7px;
 }
 
 /* Footer Styling */
@@ -563,6 +587,8 @@ figure, .figure, .picture{
     display: flex;
     align-items: center;
     gap: 10px;
+    margin: 0;
+    padding-top: 74px;
 }
 
 .footer-logo-text img {
@@ -658,67 +684,81 @@ figure, .figure, .picture{
     color: #B7B7B7;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
+/* responsive */
+@media (max-width: 1199px) and (min-width: 1025px) {
+    /* .custom_container{
+        max-width: 800px;
+    } */
+    .header .custom_container .navbar .nav-links{
+        gap: 15px;
+        margin-right: 15px;
     }
-
-    .footer-logo-text {
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    .subscription-form {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .subscription-form form {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .subscription-form input {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .subscription-form button {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-@media (max-width: 480px) {
-    .main-footer {
-        padding: 30px 20px;
-    }
-
-    .footer-logo-text p {
-        font-size: 14px;
-    }
-
-    .footer-logo-text img {
-        width: 35px;
-    }
-
-    .footer-logo-text span {
-        height: 25px;
-    }
-
-    .subscription-form p {
+    .header .custom_container .navbar .nav-links a {
         font-size: 12px;
     }
-
-    .footer-links a {
+    .header .custom_container .navbar .user-profile {
+        gap: 5px;
+    }
+    .header .custom_container .navbar .avatar {
+        width: 43px;
+        height: 43px;
+    }
+    .header .custom_container .navbar .username {
+        font-size: 12px;
+    }
+    .section_banner .custom_container .custom_flex{
+        gap: 90px;
+    }
+    .section_banner .custom_container .custom_flex .banner_text{
+       max-width: 344px;
+    }
+    .section_banner .custom_container .custom_flex .banner_text label{
+        font-size: 12px;
+    }
+    .section_banner .custom_container .custom_flex .banner_text label span{
+        font-size: 12px;
+    }
+    .section_banner .custom_container .custom_flex .banner_text h1{
+        font-size: 22px;
+    }
+    .section_banner .custom_container .custom_flex .banner_text p{
+        font-size: 12px;
+    }
+    .section_banner .custom_container .custom_flex .banner_text a{
+        font-size: 8px;
+    }
+    .section_bloglist .custom_container h2{
+        font-size: 15px;
+    }
+    .section_bloglist .custom_container ul{
+        gap: 38px;
+    }
+    .section_blog .custom_container .custom_flex h2{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+    .section_blog .custom_container .custom_flex a{
         font-size: 10px;
-        margin: 0 5px;
+    }
+    .section_blog .custom_container .blog_listing{
+        gap: 49px;
+    }
+    .section_blog .custom_container .blog_listing li .blog_info h4{
+        font-size: 13px;
+    }
+    .section_blog .custom_container .blog_listing li .blog_info .blog_auther .auther_name{
+        font-size: 9px;
+    }
+    .section_blog .custom_container .blog_listing li .blog_info p{
+        font-size: 10px;
+    }
+    .section_blog .custom_container .blog_listing li .blog_info .block_btm a{
+        font-size: 10px;
+    }
+    .section_blog .custom_container .pagination{
+        gap: 10px;
+        margin-top: 10px;
     }
 
-    .footer-copyright {
-        font-size: 10px;
-    }
+
 }
