@@ -794,4 +794,8 @@ figure, .figure, .picture{
 @media (max-width : 435px){
     .marketing-section .custom_container .card-container .card{width: 100%;}
     .section_bloglist .custom_container ul li{width: 100%;}
+    .marketing-section .custom_container .card-container{flex-wrap: wrap;row-gap: 11px;}
+    .marketing-section .custom_container .card-container .card{width: calc(50% - 2.5px);}
+    .section_bloglist .custom_container ul{flex-wrap: wrap; gap: 56px;}
+    .section_bloglist .custom_container ul li{width: calc(50% - 38px);}
 }
