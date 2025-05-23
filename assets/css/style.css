@@ -796,13 +796,11 @@ figure, .figure, .picture{
     .section_bloglist .custom_container ul li{width: 100%;}
     .marketing-section .custom_container .card-container{flex-wrap: wrap;row-gap: 11px;}
     .marketing-section .custom_container .card-container .card{width: calc(50% - 2.5px);}
-    .section_bloglist .custom_container ul{flex-wrap: wrap; gap: 56px;}
+    .section_bloglist .custom_container ul{flex-wrap: wrap; gap: 32px;}
     .section_bloglist .custom_container ul li{width: 100%;}
     .section_bloglist .custom_container h2{padding-top: 0px;}
     .section_blog .custom_container .custom_flex{padding-top: 0px;}
     .section_blog .custom_container .pagination button{font-size: 10px; width: 20px; height: 20px;}
-    /* .marketing-section .card .tags .duration {font-size: 8px;}
-    .marketing-section .card .tags .tag{font-size: 8px;} */
     .marketing-section .custom_container .card-container .card{width: 100%;}
     .marketing-section .custom_container .card-container .card .author{gap: 20px;}
 }
