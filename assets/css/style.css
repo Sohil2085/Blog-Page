@@ -796,11 +796,16 @@ figure, .figure, .picture{
     .section_bloglist .custom_container ul li{width: 100%;}
     .marketing-section .custom_container .card-container{flex-wrap: wrap;row-gap: 11px;}
     .marketing-section .custom_container .card-container .card{width: calc(50% - 2.5px);}
-    .section_bloglist .custom_container ul{flex-wrap: wrap; gap: 32px;}
+    .section_bloglist .custom_container ul{flex-wrap: wrap; gap: 25px;}
     .section_bloglist .custom_container ul li{width: 100%;}
     .section_bloglist .custom_container h2{padding-top: 0px;}
     .section_blog .custom_container .custom_flex{padding-top: 0px;}
     .section_blog .custom_container .pagination button{font-size: 10px; width: 20px; height: 20px;}
     .marketing-section .custom_container .card-container .card{width: 100%;}
     .marketing-section .custom_container .card-container .card .author{gap: 20px;}
+    .section_blog .custom_container .custom_flex h2{font-size: 18px;}
+    .section_blog .custom_container .custom_flex a{font-size: 12px;}
+    .section_bloglist .custom_container h2 {font-size: 18px;}
+    .section_blog .custom_container .blog_listing li .blog_info .blog_auther{padding-left: 10px;}
+    .section_blog .custom_container .pagination button{width: 30px; height: 30px;} 
 }
