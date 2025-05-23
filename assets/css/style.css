@@ -61,6 +61,54 @@ figure, .figure, .picture{
     box-sizing: border-box;
 }
 /* navbar */
+/* Hamburger Menu Styles */
+#hamburger {
+    display: none; /* Hidden by default on larger screens */
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+#hamburger span {
+    background: rgba(91, 91, 91, 1);
+    display: block;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+#hamburger span:nth-child(1) {
+    top: 0;
+}
+
+#hamburger span:nth-child(2) {
+    top: 8px;
+}
+
+#hamburger span:nth-child(3) {
+    top: 16px;
+}
+
+/* Active state for hamburger (when menu is open) */
+#hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+#hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+.temp{
+    display: flex;
+    gap: 69px;
+}
 .header {
   display: flex;
   align-items: center;
@@ -123,6 +171,7 @@ figure, .figure, .picture{
   align-items: center;
   gap: 10px;
   margin: 0;
+  cursor: pointer;
 }
 
 .avatar {
@@ -688,6 +737,7 @@ figure, .figure, .picture{
     color: #B7B7B7;
 }
 
+
 /* responsive */
 @media (max-width : 920px){
     .marketing-section .custom_container .card-container .card .author .footer_img{gap: 5px;}
@@ -812,4 +862,49 @@ figure, .figure, .picture{
     .section_blog .custom_container .custom_flex{padding-top: 14px;}
     .marketing-section .custom_container .header h2{font-size: 18px;}
     .marketing-section .custom_container .header a{font-size: 12px;}
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    #hamburger {
+        display: block; /* Show hamburger on mobile */
+        order: 1;
+        margin-right: 5px;
+    }
+
+    .header .custom_container .navbar .nav-links {
+        display: none; /* Hide nav links by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .header .custom_container .navbar .nav-links.active {
+        display: flex; /* Show nav links when hamburger is clicked */
+    }
+
+    .header .custom_container .navbar .nav-links a,
+    .header .custom_container .navbar .nav-links .user-profile {
+        margin: 10px 0;
+    }
+
+    .header .custom_container .navbar {
+        position: relative;
+        justify-content: flex-start; /* Align items to the left */
+        gap: 10px; /* Control the space between elements */
+    }
+    .header .custom_container .navbar .logo {
+        margin-right: auto; /* Push logo to the left, everything else to the right */
+    }
+
+    .header .custom_container .navbar .nav-links .user-profile {
+        order: 2; /* Ensure user-profile comes after hamburger */
+        margin-left: 0; /* Remove any default margin */
+    }
 }
